@@ -11,8 +11,7 @@ const zipFileName = 'cometchat-uikit-react-native-3';
 const zipName = zipFileName + ".zip";
 const source = __dirname + "/" + zipFileName;
 const destination = filePath;
-
-const downloadUrl = "https://github.com/cometchat/cometchat-uikit-react-native/archive/refs/heads/v3.zip";
+const downloadUrl = "https://github.com/kaushikRitik/cometchat-uikit-react-native/archive/refs/heads/v3.zip";
 
 
 const download = (uri, filename, callback) => {
@@ -65,7 +64,8 @@ download(downloadUrl, zipName, (props) => {
             if (checkIfFolderExists(zipFile)) {
                 deleteFileFolder(zipFile);
             }
-            let unwantedfolder = filePath + "/" + "example";
+
+            let unwantedfolder = filePath + "/CometChatWorkspace/example";
             if (checkIfFolderExists(unwantedfolder)) {
                 deleteFileFolder(unwantedfolder);
             } else {
